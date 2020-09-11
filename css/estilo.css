@@ -486,13 +486,7 @@ a:link{
   .mFooter {
     width: 110%;
   }
-  
-}
 
-@media (max-width: 991px){
-  .h1-serviço {
-    color: red;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -662,9 +656,79 @@ a:link{
     text-align: center;
     font-size: 1.5em;
   }
+
+  .mFooter {
+    width: 768px;
+  }
 }
 
+@media screen and (max-width: 767px) {
+  img {
+    display: flex;
+  }
 
+  html {
+    max-width: 425px;
+  }
+
+  .h1-serviço{
+    margin-top: 40px;
+  }
+
+  .mBgInvestimentos {
+    width: 425px;
+    height: 700px;
+    top: 650px;
+  }
+
+  .mImgInvestimentos .img-fluid {
+    margin-bottom: 30px;
+  }
+
+  .caixa-relevante {
+    padding: 800px 0;
+  }
+
+  .img-alimentando {
+    width: 415px;
+    margin-top: -450px;
+  }
+
+  .h1-missao {
+    margin-top: -100px;
+  }
+
+  .h2-ajudar {
+    margin-top: 350px;
+  }
+
+  .logo-apoiase {
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  .retangulo-apoiase .btn {
+    margin-top: 45px;
+  }
+
+  .mGalery {
+    height: 300px;
+  }
+
+  .owl-carousel img {
+    width: 300px;
+    height: 100px;
+    padding: 0;
+  }
+
+  .mFooter {
+    max-width: 425px;
+  }
+
+  .justify-content-between {
+    max-width: 425px;
+  }
+}
 
 
 @media (max-width: 320px) {
@@ -679,12 +743,11 @@ a:link{
       width: 320px;
       height: 73px;
       font-size: 1.5em;
-      padding-top: 180px;
     }
 
     .h2-serviço {
       font-size: 1em;
-      padding-top: 70px;
+      padding-top: 10px;
     }
 
     .copy-cover {
@@ -712,6 +775,7 @@ a:link{
     }
 
     .mBgInvestimentos {
+      width: 230px;
       height: 730px;
       top: 650px;
     }
@@ -744,7 +808,7 @@ a:link{
     }
 
     .h1-missao {
-      margin-top: -450px;
+      margin-top: 150px;
       font-size: 1.5em;
     }
 
@@ -783,7 +847,7 @@ a:link{
     .h2-ajudar {
       width: 200px;
       font-size: 1.2em;
-      margin-top: -150px;
+      margin-top: 550px;
     }
 
     .h2-ajudar:nth-child(1) {
