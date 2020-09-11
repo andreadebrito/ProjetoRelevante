@@ -43,6 +43,7 @@
         <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.theme.default.min.css" />
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+        <!--Font Awesome-->
 
     </head>
     <body>
@@ -53,16 +54,15 @@
         <!-- Menu Principal -->
         <div class="container"> 
             <nav class="navbar navbar-expand-sm navbar-light">
-                <a href="" class="navbar-brand">Logo</a>
+                <a href="#" class="navbar-brand"><img id="logo" src="img/logo.png" alt="Logo Projeto Relevante"></a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target2" ><span class="navbar-toggler-icon"></span> </button>
                 <div class="collapse navbar-collapse" id="nav-target2">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="" class="nav-link">Home</a> </li>
-                        <li class="nav-item"><a href="" class="nav-link">Sobre</a> </li>
-                        <li class="nav-item"><a href="" class="nav-link">Missão</a> </li>
-                        <li class="nav-item"><a href="" class="nav-link">Galeria</a> </li>
-                        <li class="nav-item"><a href="" class="nav-link btn btn-outline-warning">Quero Ajudar</a> </li>
-
+                        <li class="nav-item"><a href="" class="nav-link">HOME</a> </li>
+                        <li class="nav-item"><a href="" class="nav-link">SOBRE</a> </li>
+                        <li class="nav-item"><a href="" class="nav-link">MISSÃO</a> </li>
+                        <li class="nav-item"><a href="" class="nav-link">GALERIA</a> </li>
+                        <li class="nav-item"><a href="" class="nav-link btn btn-ajudar">Quero Ajudar</a></li>
                     </ul>
                 </div>
             </nav>
@@ -72,138 +72,184 @@
         <!-- Section Cover -->
         <section class="caixa cover">
             <div class="container">
-                <div class="row" >
+                <div class="row row-cover" >
                     <div class="col-md-6 align-self-center">
-                        <div >
-                            <h1><strong>Estar a serviço do outro,</strong> <br> é estar a serviço de Deus</h1>
-                            <p class="justificar" > Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. </p>
+                        <div>
+                            <h1 class="h1-serviço">Estar a serviço do outro,</h1>
+                            <h2 class="h2-serviço">é estar a serviço de Deus</h2>
+                            <p class="justificar copy-cover"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam. </p>
                         </div>
-                        <div class="row justify-content-center">
+                        <div class="row">
                             <div class="col-4 d-flex"> 
                                 <div class="align-self-center">
-                                    <a class="btn btn-warning" href="#" target="blank"><strong>Quero ajudar</strong></a>
+                                    <a class="btn btn-link-ajudar link-ajudar" href="#" target="blank">Quero ajudar</a>
                                 </div>
                             </div>                               
                             <div class="col-4 d-flex"> 
                                 <div class="align-self-center">
-                                    <a class="border-bottom border-warning" href="#" target="blank"><strong>Mais informações</strong></a>
+                                    <a class="link-informações" href="#" target="blank">Mais informações</a>
                                 </div>
                             </div>
                         </div><!--/row-->                
                     </div><!--col-->  
-                    <div class="col-md-6 d-md-block d-none">
-                        <div class="mMainImg">
-                            <img src="img/principal.jpeg" alt="Ações humanitárias" class="img-fluid"  >  
+                    <div class="col-md-6 d-md-block d-none container-imagens">
+                        <div class="retangulo-amarelo">
+                        <img class="mMainImg img-fluid" src="img/matheus-ferrero-O4PVpdIbQJg-unsplash 1.png" alt="Senhor">
                         </div>
                     </div><!--/col--> 
-                 </div><!--/row-->       
+                </div><!--/row-->       
             </div><!--/container-->
         </section>
         <!--/section cover-->
         
         <!--section investimento-->
         <section class="mBgInvestimentos">
-            <div class="row justify-content-center mt-2">
-                <div class="col-md d-md-block align-self-center ">
+            <div class="row">
+                <div class="col-md d-md-block imagens-investir">
                     <div class="mImgInvestimentos">
-                        <img src="img/1.png"  class="img-fluid" alt="" href="#"> 
+                        <img src="img/talheres.png"  class="img-fluid" alt="" href="#">
                     </div> 
                     <div class="mDivInvestimentos" >
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit.</p>
+                        <h3 class="h3-investimentos">Com R$1</h3>
+                        <p class="p-investimentos">Você contribui para a distribuição de alimento.</p>
                     </div>
                 </div>
                 <div class="col-md d-md-block " >
                     <div class="mImgInvestimentos">
-                        <img src="img/2.png"  class="img-fluid" alt="" href="#">
+                        <img src="img/chinelos.png"  class="img-fluid" alt="" href="#">
+                        
                     </div>  
                     <div class="mDivInvestimentos">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit.</p>
+                        <h3 class="h3-investimentos">Com R$5</h3>
+                        <p class="p-investimentos">Você contribui para a fabricação de um chinelo.</p>
                     </div>
                 </div>
                 <div class="col-md d-md-block ">
                     <div class="mImgInvestimentos">
-                        <img src="img/3.png"  class="img-fluid" alt="" href="#">
+                        <img src="img/escova.png"  class="img-fluid" alt="" href="#">
                     </div>  
                     <div class="mDivInvestimentos">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit.</p>
+                        <h3 class="h3-investimentos">Com R$15</h3>
+                        <p class="p-investimentos">Você contribui com a distribuição de um kit de higiene.</p>
                     </div>
                 </div>
                 <div class="col-md d-md-block ">
                     <div class="mImgInvestimentos">
-                        <img src="img/4.png"  class="img-fluid" alt="" href="#">
+                        <img src="img/cesta.png"  class="img-fluid" alt="" href="#">
                     </div>  
                     <div class="mDivInvestimentos">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit.</p>
+                        <h3 class="h3-investimentos">Com R$46</h3>
+                        <p class="p-investimentos">Você contribui para montar uma cesta básica.</p>
                     </div>
                 </div>
                 
             </div><!--/row-->
         </section>
         <!--/section investimento-->
-           
-        <!-- section Gilberto Chagas Jr -->   	
-        <section class="caixa">
+        
+        <!-- section Projeto Relevante -->   	
+        <section class="caixa-relevante">
             <div class="container">
                 <div class="row justify-content-between" >
-                    <div class="col-md-5 d-md-block" >
+                    <div class="col-md-5 d-md-block d-none" >
                         <div class="align-self-center" >
-                            <img src="img/section-2.jpeg" alt="iniciativa surgiu de um encontro entre amigas" class="mr-3 img-fluid">
+                            <div class="retangulo-menor">
+                                <img class="img-grupo img-fluid" src="img/img-grupo.png" alt="iniciativa surgiu de um encontro entre amigas" class="mr-3 img-fluid">
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-5 d-md-block" >    
                         <div class="align-self-center mtext" >
-                            <h2><strong itemprop="name">Gilberto Chagas Jr</strong></h2>
-                            <p><span itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</span></p>
+                            <h1 class="h1-relevante"><itemprop="name">Projeto Relevante</h1>
+                            <p class="justificar copy-relevante">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor 
+                                incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
                         </div>
                     </div>
                 </div>    
             </div>	
         </section>
-        <!--/section Gilberto Chagas Jr-->
+        <!--/section Projeto Relevante-->
 
-        <!--section Imagem-->
-        <div class="imagem"></div>
-        <!--/section Imagem-->
+        <!--section Alimentando-->
+        <div class="col-md-12 container-fluid">
+            <img class="img-fluid img-alimentando" src="img/img-alimentando.png" alt="Grupo fornecendo alimento">
+        </div>
+        <!--/section Alimentando-->
 
-       <!--section missão-->
+        <!--section Missão-->
         <section class="caixa missao">
             <div class="container">
                 <div class="row" >
                     <div class="col-md-6 align-self-center">
                         <div >
-                            <h1><strong>Missão</strong> <br> é estar a serviço de Deus</h1>
-                            <p class="justificar" > Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. </p>
+                            <h1 class="h1-missao">Missão</h1>
+                            <p class="justificar copy-missao" > Lorem ipsum dolor sit amet, consectetur adipisci elit, 
+                                sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis 
+                                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. <br><br>
+                                Até agora:
+                            </p>
                         </div>
+                        
                         <div class="row justify-content-center">
-                            <div class="col-4 d-flex"> 
+                            <div class="col-md d-md-block icones-missao"> 
                                 <div class="align-self-center">
-                                    <a class="border-bottom border-warning" href="#" target="blank"><strong>Mais informações</strong></a>
+                                    <img class="img-fluid img-icones" src="img/valores.png" alt="Valores arrecadados">
+                                    <p class="copy-icones">Arrecadamos R$3.061</p>
                                 </div>
                             </div>                               
-                            <div class="col-4 d-flex"> 
+                            <div class="col-md d-md-block icones-missao"> 
                                 <div class="align-self-center">
-                                    <a class="border-bottom border-warning" href="#" target="blank"><strong>Mais informações</strong></a>
+                                    <img class="img-fluid img-icones" src="img/atendidos.png" alt="Pessoas ajudadas">
+                                    <p class="copy-icones">Ajudamos mais de 1.500 pessoas</p>
                                 </div>
-                            </div> <div class="col-4 d-flex"> 
+                            </div> <div class="col-md d-md-block icones-missao"> 
                                 <div class="align-self-center">
-                                    <a class="border-bottom border-warning" href="#" target="blank"><strong>Mais informações</strong></a>
+                                    <img class="img-fluid img-icones-livro" src="img/livros.png" alt="Livros vendidos">
+                                    <p class="copy-icones">Vendemos mais de 500 livros</p>
                                 </div>
                             </div>
                         </div><!--/row-->                              
                     </div><!--col-->  
                     <div class="col-md-6 d-md-block d-none">
-                        <div class="mMainImg">
+                        <div class="img-brasil">
                             <img src="img/brasil.png" alt="Atendimentos do Projeto Relevante" class="img-fluid"  >  
                         </div>
                     </div><!--/col--> 
-                 </div><!--/row-->       
+                </div><!--/row-->       
             </div><!--/container-->
         </section>
         <!--/section missão-->
+
+        <!--section como posso ajudar-->
+        <section class="caixa-ajudar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="h2-ajudar">"Como posso ajudar?"</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container container-retangulo">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="retangulo-apoiase">
+                            <p class="copy-apoia">Doar no Apoia-se!</p>
+                            <img class="logo-apoiase" src="img/apoiase.png" alt="Logo Apoia-se">
+                            <a href="#" class="btn btn-apoiar">Apoiar agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/section como posso ajudar-->
     
         <!--section galeria-->
         <section class="mGalery">
-            <div class="container">
+            <div class="container-fluid">
+                <h2 class="h2-galeria">Galeria de fotos</h2>
                 <div class="owl-carousel owl-theme">
                     <div class="item"><img src="img/imagem1.jpeg"></div>
                     <div class="item"><img src="img/imagem2.jpeg"></div>
@@ -221,12 +267,12 @@
                 <div class="mFooterAlign"> 
                 <div class="row justify-content-between" >
                     <div class="col-3">
-                        <a href="" ><img  src="" >Logo</a>
+                        <a href="#" ><img class="logobw" src="img/logo-bw.png"></a>
                     </div>
                     <div class="col-4 d-flex justify-content-end">                      
-                            <a class="mr-2" href="#"><img src="img/facebook.png" width="20"></a>
-                            <a class="mr-2" href=""><img src="img/linkedin.png" width="20"></a>
-                            <a class="mr-2" href="#"><img src="img/insta.png" width="20"></a>
+                            <a class="mr-2" href="#"><img class="redes-sociais" src="img/facebook.png"></a>
+                            <a class="mr-2" href=""><img class="redes-sociais" src="img/linkedin.png"> </a>
+                            <a class="mr-2" href="#"><img class="redes-sociais" src="img/insta.png"> </a>
                     </div> 
                 </div> <!--/row-->
             </div>
