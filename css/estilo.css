@@ -1,5 +1,7 @@
 /*----------------------------------GERAL---------------------------------------*/
-*{
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,400;0,500;1,300&display=swap');
+
+* {
   margin: 0;
   padding:0;
   
@@ -10,55 +12,160 @@ img-fluid{
   display: block;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-font-family: 'Open Sans', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-font-family: 'Montserrat', sans-serif; font-weight: 300; 
-
-h1, h2, h3, h4, h5, h6 { 
-  font-family: 'Montserrat', sans-serif; 
-  font-weight: 300; 
+a:link{ 
+  text-decoration:none;
   color:#151C20;
-  font-size: 40px;
-  
-}
-
-a:link { 
- text-decoration:none;
- color:#151C20;
-  
 } 
 
-p { 
-  font-family: 'Open Sans', sans-serif; 
-  letter-spacing: -0.05em; 
-  font-size: 21px;
-}
 .caixa {
-  padding: 60px 0;
- }
+  padding: 80px 0;
+}
+
+/*----------------------------------LOGO----------------------------------------*/
+#logo {
+  position: flex;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+/*----------------------------------NAV----------------------------------------*/
+.nav-link {
+  font-family:'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6D6D6D;  
+}
+
+.btn-ajudar {
+  border: 2px solid #F5D040;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-weight: 500;
+}
 
 /*----------------------------------COVER---------------------------------------*/
+.h1-serviço {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  width: 491px;
+  height: 73px;
+  line-height: 73px;
+  color: #232323;
+  margin-top: -156px;
+}
+
+.h2-serviço {
+  font-family: 'Anton', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  color: #232323;
+}
 
 .justificar {
   text-align: justify;
 }
 
-.mMainImg{
-  width: 400px;
-  height: 400px;
-  margin: auto;
+.copy-cover {
+  font-family: Montserrat;
+  width: 438px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #6D6D6D;
 }
 
-/*----------------------------------INVESTIMENTOS---------------------------------------*/
+.link-ajudar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
 
+.btn-link-ajudar {
+  position: absolute;
+  width: 160px;
+  height: 46px;
+  background: #F5D040;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.link-informações {
+  width: 143px;
+  height: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 33px;
+  color: #6D6D6D;
+  margin-top: 53px;
+}
+
+.link-informações:nth-child(1) {
+    border-bottom: 2px solid #F5D040;
+    padding-bottom: 13px;
+    display: inline-block;
+}
+
+.container-imagens {
+  width: 100%;
+  height: 568px;
+}
+.mMainImg {
+  position: absolute;
+  width: 649px;
+  height: 433px;
+  right: 15px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
+.retangulo-amarelo {
+  position: absolute;
+  width: 575px;
+  height: 369px;
+  left: 50px;
+  margin-top: -20px;
+  border: 3px solid #F5D040;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+
+/*----------------------------------INVESTIMENTOS---------------------------------------*/
 .mBgInvestimentos{
- background-color: gray; 
- padding: 40px;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  left: -1px;
+  top: 668px;
+  background-color: #F4F4F4; 
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.imagens-investir {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .mImgInvestimentos{
-  width: 70px;
+  width: 66px;
   height: 70px;
   margin: auto;
 }
@@ -68,39 +175,637 @@ p {
   margin: auto;
   font-size: 12px;
   text-align: start ;
- }
+}
 
-/*----------------------------------IMAGEM---------------------------------------*/
+.h3-investimentos {
+  width: 72px;
+  height: 29px;
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #6D6D6D;
+  margin: 0 auto;
+  padding-bottom: 3px;
+}
 
-.imagem{
-  background-color: gray;
-  height: 500px;
+.p-investimentos {
+  width: 159px;
+  height: 70px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #6D6D6D;
+}
 
+/*----------------------------------PROJETO RELEVANTE---------------------------------------*/
+.caixa-relevante {
+  width: 100%;
+  height: 100%;
+  padding: 300px 0;
+}
+
+.h1-relevante {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  width: 491px;
+  height: 73px;
+  line-height: 73px;
+  color: #232323;
+  margin-top: 30px;
+}
+
+.copy-relevante {
+  font-family: 'Montserrat', sans-serif;
+  width: 529px;
+  height: 190px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #6D6D6D;
+  margin-left: 36px;
+}
+
+.retangulo-menor {
+  position: absolute;
+  width: 560px;
+  height: 349px;
+  left: 15px;
+  border: 3px solid #F5D040;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.img-grupo {
+  position: absolute;
+  width: 100%;
+  right: 20px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+/*-------------------------------ALIMENTANDO-------------------------------------*/
+.img-alimentando {
+  width: 100%;
 }
 
 /*----------------------------------MISSAO---------------------------------------*/
-
 .missao{
-  
   height: 500px;
-
 }
 
+.h1-missao {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  width: 491px;
+  height: 73px;
+  line-height: 73px;
+  color: #232323;
+  margin-top: -156px;
+}
+
+.copy-missao {
+  font-family: 'Montserrat', sans-serif;
+  width: 529px;
+  height: 190px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #6D6D6D;
+  margin-left: 36px;
+}
+
+.img-brasil {
+  width: 100%;
+  height: 499px;
+  margin-left: 87px;
+  margin-top: -100px;
+}
+
+.justify-content-center {
+  margin: 0 auto;
+}
+
+.icones-missao {
+  width: 608px;
+  height: 190px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.img-icones {
+  width: 40%;
+  height: 40%;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.img-icones-livro {
+  width: 30%;
+}
+
+.copy-icones {
+  width: 116px;
+  height: 63px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  text-align: center;
+  margin-top: 3px;
+  color: #6D6D6D;
+}
+/*------------------------------COMO POSSO AJUDAR-----------------------------------*/
+.h2-ajudar {
+  width: 366px;
+  height: 59px;
+  display: flex;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  line-height: 59px;
+  color: #000000;
+  margin-top: 88px;
+}
+
+.h2-ajudar:nth-child(1) {
+  border-bottom: 2px solid #F5D040;
+  padding-bottom: 13px;
+  display: inline-block;
+}
+
+.container-retangulo {
+  margin-top: 47px;
+}
+
+.retangulo-apoiase {
+  width: 380px;
+  height: 290px;
+  background: #FFFFFF;
+  border: 2px solid #F5D040;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.logo-apoiase {
+  margin-top: 63px;
+  margin-bottom: 69px;
+}
+
+.btn-apoiar {
+  height: 46px;
+  width: 160px;
+  background: #F5D040;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.retangulo-apoiase a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #FFFFFF;
+}
 /*----------------------------------GALERIA---------------------------------------*/
+.mGalery .container-fluid {
+  width: 100%;
+  height: 400px;
+  background-color: #F4F4F4;
+  margin-top: 125px;
+}
+
+.h2-galeria {
+  width: 302px;
+  height: 37px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6D6D6D;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
 .mGalery{
-  height: 300px;
-  padding: 50px;
+  width: 100%;
+  height: 500px;
 }
 
 .owl-carousel img {
-   height: 200px;
+  height: 300px;
+  display: flex;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }/*----------------------------------FOOTER---------------------------------------*/
 .mFooter{
+  width: 100%;
+  height: 80px;
   padding: 5px;
   margin-top: 20px;
-  background-color: rgba(2, 2, 41, 0.911);
-  height: 40px;
+  background-color: #000B14;
+}
+
+.logobw {
+  width: 171px;
+  height: 44px;
+  margin-top: 18px;
+}
+
+.redes-sociais {
+  width: 20px;
+  display: flex;
+  align-content: space-around;
+  margin-top: 18px;
+}
+
+/*------------------------------MEDIA QUERY------------------------------------*/
+@media screen and (max-width: 1024px) {
+  .mBgInvestimentos {
+    width: 110%;
+  }
+
+  .copy-relevante {
+    width: 400px;
+  } 
+
+  .img-alimentando {
+    width: 180%;
+  }
+
+  .missao {
+    margin-top: 30px;
+  }
+
+  .copy-missao {
+    width: 500px;
+  }
+
+  .icones-missao {
+    width: 300px;
+    display: flex;
+    padding-top: 10px;
+    margin-left: 5px;
+  }
+
+  .img-icones {
+    width: 30%;
+    float: none;
+    display: flex;
+    box-flex-group: column;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .img-icones-livro {
+    width: 40px;
+    height: 45px;
+    display: flex;
+    box-flex-group: column;
+    margin-top: 50px;
+    margin-left: 45px;
+  }
+
+  .mGalery .container-fluid {
+    width: 110%;
+  }
+
+  .mFooter {
+    width: 110%;
+  }
   
 }
 
+@media (max-width: 991px){
+  .h1-serviço {
+    color: red;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .nav-link {
+    display: flex;
+    font-size: 1em;
+    margin-top: 5px;
+  }
+  
+  .btn-ajudar {
+    width: 128px;
+    justify-content: center;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  .h1-serviço {
+    width: 768px;
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
+
+  .h2-serviço {
+    font-size: 1em;
+    margin-left: 10px;
+    margin-top: -20px;
+  }
+
+  .cover {
+    padding: 0;
+  }
+  .copy-cover {
+    width: 300px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+  .link-ajudar {
+    font-size: 0.8em;
+  }
+
+  .link-informações {
+    font-size: 0.8em;
+    margin-left: 50px;
+  }
+
+  .mMainImg {
+    width: 280px;
+    height: 150%;
+    right: 0;
+    border-radius: 30px;
+  }
+
+  .retangulo-amarelo {
+    width: 250px;
+    height: 150px;
+    margin-top: 80px;
+  }
+
+  .link-informações:nth-child(1) {
+    width: 120px;
+  }
+  
+  .mBgInvestimentos {
+    height: 400px;
+    width: 100%;
+    margin-top: -80px;
+  }
+
+  .p-investimentos {
+    font-size: 1em;
+  }
+
+  .caixa-relevante {
+    margin-top: 80px;
+    height: 600px;
+  }
+
+  .h1-relevante {
+    width: 320px;
+    height: 73px;
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .copy-relevante {
+      width: 250px;
+      font-size: 0.8em;
+  }
+
+  .retangulo-menor {
+    width: 350px;
+    height: 180px;
+  }
+
+  .img-grupo {
+    width: 450px;
+    height: 200px;
+  }
+
+  .h1-missao {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+  .copy-missao {
+    width: 250px;
+    font-size: 0.8em;
+  }
+
+  .img-brasil {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .icones-missao {
+    width: 300px;
+    display: flex;
+    padding-top: 10px;
+  }
+
+  .img-icones {
+    width: 30%;
+    float: none;
+    display: flex;
+    box-flex-group: column;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .img-icones-livro {
+    width: 40px;
+    height: 45px;
+    display: flex;
+    box-flex-group: column;
+    margin-top: 50px;
+    margin-left: 45px;
+  }
+
+  .copy-icones {
+    font-size: 0.8em;
+  }
+
+  .h2-ajudar {
+    margin-top: 220px;
+    font-size: 1.5em;
+  }
+
+  .h2-ajudar:nth-child(1) {
+    width: 220px;
+  }
+
+  .container-fluid{
+    width: 635px;
+  }
+
+  .mGalery .container-fluid {
+    width: 100%;
+  }
+
+  .h2-galeria {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+
+
+
+@media (max-width: 320px) {
+    .btn-ajudar {
+      width: 150px;
+      justify-content: center;
+      margin-left: -10px;
+      margin-bottom: 20px;
+    }
+
+    .h1-serviço {
+      width: 320px;
+      height: 73px;
+      font-size: 1.5em;
+      padding-top: 180px;
+    }
+
+    .h2-serviço {
+      font-size: 1em;
+      padding-top: 70px;
+    }
+
+    .copy-cover {
+      width: 280px;
+      font-size: 0.8em;
+    }
+    .link-ajudar {
+      font-size: 0.8em;
+    }
+
+    .btn-link-ajudar {
+      width: 150px;
+      font-size: 0.8em;
+    }
+
+    .link-informações {
+      font-size: 0.8em;
+      width: 117px;
+      margin-left: 63px;
+    }
+
+    .caixa-cover {
+      width: 300px;
+      height: 300px;
+    }
+
+    .mBgInvestimentos {
+      height: 730px;
+      top: 650px;
+    }
+
+    .p-investimentos {
+      font-size: 1em;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    
+    .caixa-relevante {
+      padding: 800px 0;
+    }
+
+    .h1-relevante {
+      width: 320px;
+      height: 73px;
+      font-size: 1.5em;
+      padding-top: 10px;
+    }
+
+    .copy-relevante {
+      width: 250px;
+      font-size: 0.8em;
+    }
+
+    .img-alimentando {
+      width: 50%;
+      margin-top: -950px;
+    }
+
+    .h1-missao {
+      margin-top: -450px;
+      font-size: 1.5em;
+    }
+
+    .copy-missao {
+      width: 250px;
+      font-size: 0.8em;
+    }
+
+    .icones-missao {
+      width: 300px;
+      display: flex;
+      padding-top: 10px;
+    }
+
+    .img-icones {
+      width: 30%;
+      float: none;
+      display: flex;
+      box-flex-group: column;
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+    
+    .img-icones-livro {
+      width: 150%:
+      display: flex;
+      box-flex-group: column;
+      margin-top: 50px;
+      margin-left: 45px;
+    }
+
+  .copy-icones {
+    font-size: 0.8em;
+    }
+
+    .h2-ajudar {
+      width: 200px;
+      font-size: 1.2em;
+      margin-top: -150px;
+    }
+
+    .h2-ajudar:nth-child(1) {
+      width: 180px;
+    }
+
+    .retangulo-apoiase {
+      width: 280px;
+    }
+
+    .owl-carousel img {
+      width: 300px;
+      height: 100px;
+      padding: 0;
+    }
+
+    .mFooter {
+      width: 100%;
+    }
+
+    .logobw {
+      width: 160px;
+      height: 34px;
+    }
+}
